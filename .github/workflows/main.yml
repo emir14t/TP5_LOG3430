@@ -30,5 +30,5 @@ jobs:
 
       - name: Run Locust load test
         run: |
-          locust --locustfile=locust.py --headless --users 10000 --spawn-rate 100 \
+          locust --locustfile=locustfile.py --headless --users 10000 --spawn-rate 100 \
           --run-time 2m --host=http://127.0.0.1:5100
